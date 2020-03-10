@@ -29,7 +29,7 @@
                 <div class="form-group">
                     <label for="description" class="form-control-label">Deskripsi Barang</label>
                     <textarea name="description"
-                        class="form-control @error('description') is-invalid @enderror"
+                        class="ckeditor form-control @error('description') is-invalid @enderror"
                     >
                         {{ old('description') }}
                     </textarea>
