@@ -20,5 +20,8 @@ Auth::routes(['register' => false]);
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('products/{id}/gallery', 'ProductController@gallery')
+    ->name('products.gallery');
+
 Route::resource('products', 'ProductController');
 Route::resource('product-galleries', 'ProductGalleryController');
